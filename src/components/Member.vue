@@ -10,20 +10,22 @@ defineProps({
   }
 })
 </script>
+
 <template>
   <div class="hina">
     <div class="member">
-    <div><img :src="image" alt="emoji" class="emoji" /></div>
-    <div class="name">{{ name }}</div>
-  </div>
+      <div><img :src="image" alt="nanashi" class="men" /></div>
+      <div class="name">{{ name }}</div>
+    </div>
   </div>
 </template>
+
 <style scoped>
 .name {
   font-size: 2rem;
 }
 
-.menber {
+.member {
   float: left;
   margin: auto;
 }
@@ -34,7 +36,7 @@ defineProps({
 }
 
 @media screen and (max-width:450px) { 
-  .emoji {
+  .men {
     width: 179px;
   }
 }
