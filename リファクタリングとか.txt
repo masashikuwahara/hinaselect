@@ -2,13 +2,14 @@
 import { ref } from 'vue'
 import Member from '../components/Member.vue'
 
-// 画像パスを配列で管理する
+// 画像パスを配列で管理する。Array.from()であらかじめ決められた数の配列を作成。
+//それに合わせてファイル名も変更かな。
 const imagePaths = Array.from({ length: 28 }, (_, i) => new URL(`../assets/${i + 1}.jpg`, import.meta.url).href)
 
 const members = ref([
   { name: '加藤史帆', image: imagePaths[0] },
   { name: '佐々木久美', image: imagePaths[1] },
-  // 他のメンバーを追加
+  // ここに他のメンバーを追加していく感じ
 ])
 
 const pickedMemberIndex = ref(0)
@@ -20,7 +21,7 @@ function pickMember(index) {
 }
 </script>
 
------ここからメモ-----
+-----ここから関係ないメモ-----
 
 # puts "Hello,world"
 
