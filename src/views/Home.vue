@@ -1,7 +1,7 @@
 <template>
 <h1>Hinaselect</h1>
 <div class="sub">
-  <h2>日向坂46の推しメン選びのアプリの簡易版です。推しメン1人を選ぶことができます。</h2>
+  <h2>日向坂46の推しメン選びアプリの簡易版です。推しメン1人を選ぶことができます。</h2>
   <router-link to="/select" class="btn btn-outline-info" >スタート！</router-link>
 </div>
 <router-view/>
